@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pesan - TopUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-header">
+        <div class="header-top">
+            <a href="index.html" class="btn-back">‹</a>
+            <h2 class="page-title">Pesan Produk</h2>
+            <div class="spacer"></div>
+        </div>
+    </div>
+
+    <section class="services-mobile">
+        <div class="service-tabs">
+            <button class="tab active" data-tab="pulsa">Pulsa</button>
+            <button class="tab" data-tab="data">Data</button>
+            <button class="tab" data-tab="pln">PLN</button>
+            <button class="tab" data-tab="ewallet">E-Wallet</button>
+            <button class="tab" data-tab="game">Game</button>
+            <button class="tab" data-tab="streaming">Streaming</button>
+        </div>
+
+        <div class="service-content">
+            <div class="operator-select">
+                <label>Pilih Provider</label>
+                <select id="operatorSelect">
+                    <option value="">Pilih provider</option>
+                </select>
+            </div>
+
+            <div class="input-number">
+                <label>Nomor / ID</label>
+                <input type="tel" id="phoneNumber" placeholder="08123456789">
+                <button class="btn-contact">📱</button>
+            </div>
+
+            <div class="nominal-section">
+                <label>Pilih Nominal</label>
+                <div class="nominal-grid" id="nominalOptions"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottom-bar" id="bottomBar" style="display:none;">
+        <div class="bottom-info">
+            <div class="bottom-label">Total Bayar</div>
+            <div class="bottom-price" id="bottomPrice">Rp 0</div>
+        </div>
+        <button class="btn-checkout" id="btnCheckout">Bayar</button>
+    </div>
+
+    <div class="modal" id="paymentModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-bottom">
+            <div class="modal-header">
+                <h3>Pilih Pembayaran</h3>
+                <button class="btn-close">&times;</button>
+            </div>
+            <div class="payment-list">
+                <button class="payment-item" data-method="dana">
+                    <div class="payment-icon">💰</div>
+                    <div class="payment-info">
+                        <div class="payment-name">DANA</div>
+                        <div class="payment-desc">Bayar pakai DANA</div>
+                    </div>
+                    <div class="payment-arrow">›</div>
+                </button>
+                <button class="payment-item" data-method="ovo">
+                    <div class="payment-icon">🟣</div>
+                    <div class="payment-info">
+                        <div class="payment-name">OVO</div>
+                        <div class="payment-desc">Bayar pakai OVO</div>
+                    </div>
+                    <div class="payment-arrow">›</div>
+                </button>
+                <button class="payment-item" data-method="gopay">
+                    <div class="payment-icon">🟢</div>
+                    <div class="payment-info">
+                        <div class="payment-name">GoPay</div>
+                        <div class="payment-desc">Bayar pakai GoPay</div>
+                    </div>
+                    <div class="payment-arrow">›</div>
+                </button>
+                <button class="payment-item" data-method="qris">
+                    <div class="payment-icon">💳</div>
+                    <div class="payment-info">
+                        <div class="payment-name">QRIS</div>
+                        <div class="payment-desc">Scan & bayar</div>
+                    </div>
+                    <div class="payment-arrow">›</div>
+                </button>
+                <button class="payment-item" data-method="transfer">
+                    <div class="payment-icon">🏦</div>
+                    <div class="payment-info">
+                        <div class="payment-name">Transfer Bank</div>
+                        <div class="payment-desc">BCA, Mandiri, BRI, BNI</div>
+                    </div>
+                    <div class="payment-arrow">›</div>
+                </button>
+                <button class="payment-item" data-method="whatsapp">
+                    <div class="payment-icon">💬</div>
+                    <div class="payment-info">
+                        <div class="payment-name">WhatsApp</div>
+                        <div class="payment-desc">Pesan via WhatsApp</div>
+                    </div>
+                    <div class="payment-arrow">›</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Beranda</span>
+        </a>
+        <a href="order.html" class="nav-item active">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Pesan</span>
+        </a>
+        <a href="history.html" class="nav-item">
+            <span class="nav-icon">📝</span>
+            <span class="nav-label">Riwayat</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Profil</span>
+        </a>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

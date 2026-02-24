@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TopUp - Beli Pulsa & Voucher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-header">
+        <div class="header-top">
+            <div class="logo">IchiStore</div>
+            <div class="header-icons">
+                <button class="icon-btn">🔔</button>
+                <button class="icon-btn">👤</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Cari pulsa, paket data, token...">
+        <span class="search-icon">🔍</span>
+    </div>
+
+    <section class="banner-section">
+        <div class="banner-slider">
+            <div class="banner active">
+                <div class="banner-content">
+                    <h2>Diskon 50%</h2>
+                    <p>Pulsa & Paket Data</p>
+                    <button class="btn-banner">Ambil Promo</button>
+                </div>
+            </div>
+        </div>
+        <div class="banner-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section class="balance-section">
+        <div class="balance-card">
+            <div class="balance-left">
+                <span class="balance-label">Saldo TopUp</span>
+                <span class="balance-amount">Rp 999.999.999.999</span>
+            </div>
+            <button class="btn-topup-small">+ Top Up</button>
+        </div>
+        <div class="quick-actions">
+            <button class="action-btn">
+                <span>💸</span>
+                <span>Bayar</span>
+            </button>
+            <button class="action-btn" onclick="window.location.href='history.html'">
+                <span>📝</span>
+                <span>Riwayat</span>
+            </button>
+            <button class="action-btn">
+                <span>🎁</span>
+                <span>Voucher</span>
+            </button>
+            <button class="action-btn">
+                <span>⭐</span>
+                <span>Favorit</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="section-header">
+            <h3>Kategori Layanan</h3>
+            <a href="#" class="see-all">Lihat Semua ›</a>
+        </div>
+        <div class="category-grid">
+            <div class="category-item" data-category="pulsa">
+                <div class="category-icon">📱</div>
+                <span>Pulsa</span>
+            </div>
+            <div class="category-item" data-category="data">
+                <div class="category-icon">📶</div>
+                <span>Paket Data</span>
+            </div>
+            <div class="category-item" data-category="pln">
+                <div class="category-icon">⚡</div>
+                <span>PLN</span>
+            </div>
+            <div class="category-item" data-category="ewallet">
+                <div class="category-icon">💳</div>
+                <span>E-Wallet</span>
+            </div>
+            <div class="category-item" data-category="game">
+                <div class="category-icon">🎮</div>
+                <span>Game</span>
+            </div>
+            <div class="category-item" data-category="streaming">
+                <div class="category-icon">🎬</div>
+                <span>Streaming</span>
+            </div>
+            <div class="category-item" data-category="voucher">
+                <div class="category-icon">🎫</div>
+                <span>Voucher</span>
+            </div>
+            <div class="category-item" data-category="more">
+                <div class="category-icon">➕</div>
+                <span>Lainnya</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-section">
+        <div class="section-header">
+            <h3>Promo Spesial</h3>
+            <a href="#" class="see-all">Lihat Semua ›</a>
+        </div>
+        <div class="promo-slider">
+            <div class="promo-card">
+                <div class="promo-badge">PROMO</div>
+                <div class="promo-icon">📱</div>
+                <h4>Pulsa 50rb</h4>
+                <p class="promo-price">
+                    <span class="old-price">Rp 51.000</span>
+                    <span class="new-price">Rp 45.000</span>
+                </p>
+                <button class="btn-promo">Beli Sekarang</button>
+            </div>
+            <div class="promo-card">
+                <div class="promo-badge">HEMAT</div>
+                <div class="promo-icon">📶</div>
+                <h4>Data 10GB</h4>
+                <p class="promo-price">
+                    <span class="old-price">Rp 85.000</span>
+                    <span class="new-price">Rp 75.000</span>
+                </p>
+                <button class="btn-promo">Beli Sekarang</button>
+            </div>
+            <div class="promo-card">
+                <div class="promo-badge">HOT</div>
+                <div class="promo-icon">⚡</div>
+                <h4>Token 100rb</h4>
+                <p class="promo-price">
+                    <span class="old-price">Rp 100.500</span>
+                    <span class="new-price">Rp 95.000</span>
+                </p>
+                <button class="btn-promo">Beli Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-section">
+        <div class="section-header">
+            <h3>Paling Laku</h3>
+            <a href="#" class="see-all">Lihat Semua ›</a>
+        </div>
+        <div class="popular-list">
+            <div class="popular-item">
+                <div class="popular-icon">📱</div>
+                <div class="popular-info">
+                    <h5>Pulsa Telkomsel 10rb</h5>
+                    <p>Rp 11.000</p>
+                </div>
+                <button class="btn-buy">Beli</button>
+            </div>
+            <div class="popular-item">
+                <div class="popular-icon">📶</div>
+                <div class="popular-info">
+                    <h5>XL 3GB 30 Hari</h5>
+                    <p>Rp 35.000</p>
+                </div>
+                <button class="btn-buy">Beli</button>
+            </div>
+            <div class="popular-item">
+                <div class="popular-icon">⚡</div>
+                <div class="popular-info">
+                    <h5>Token PLN 50rb</h5>
+                    <p>Rp 50.500</p>
+                </div>
+                <button class="btn-buy">Beli</button>
+            </div>
+            <div class="popular-item">
+                <div class="popular-icon">🎮</div>
+                <div class="popular-info">
+                    <h5>Mobile Legends 86 DM</h5>
+                    <p>Rp 20.000</p>
+                </div>
+                <button class="btn-buy">Beli</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-card">
+            <div class="info-icon">⚡</div>
+            <div class="info-content">
+                <h4>Proses Cepat</h4>
+                <p>Transaksi selesai dalam hitungan detik</p>
+            </div>
+        </div>
+        <div class="info-card">
+            <div class="info-icon">🔒</div>
+            <div class="info-content">
+                <h4>Aman Terpercaya</h4>
+                <p>Data kamu dijamin aman 100%</p>
+            </div>
+        </div>
+        <div class="info-card">
+            <div class="info-icon">💰</div>
+            <div class="info-content">
+                <h4>Harga Terbaik</h4>
+                <p>Dapatkan harga paling murah se-Indonesia</p>
+            </div>
+        </div>
+    </section>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item active">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Beranda</span>
+        </a>
+        <a href="order.html" class="nav-item">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Pesan</span>
+        </a>
+        <a href="history.html" class="nav-item">
+            <span class="nav-icon">📝</span>
+            <span class="nav-label">Riwayat</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Profil</span>
+        </a>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>
